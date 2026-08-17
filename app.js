@@ -1,4 +1,4 @@
-const API_URL="https://script.google.com/macros/s/AKfycby8Sf50WMp-m8IaTnBzvxcEOxXTwvoQI6kZfFD2V_qzcWhlZGIXrzAt1ToRl8RPNu95/exec";
+const API_URL="https://script.google.com/macros/s/AKfycbzMJO-bMQFOIe-fgr_wyoGlGjov917LmOdJ_cQd1c3cTZZ6CPoQPJsacXZZUERhg-h8/exec";
 const $=id=>document.getElementById(id), form=$("studentForm"), statusEl=$("status"), tableBody=$("tableBody");
 function status(m){statusEl.textContent=m}
 function esc(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}
