@@ -1,4 +1,4 @@
-const API_URL="https://script.google.com/macros/s/AKfycbyGnqEJzErTo-TvGAVOyXprVs3NJp5d1BRVuJ0g37kcbtJKthf2CXR_zxBBMf_y8Mw_/exec",MAX=5*1024*1024,$=x=>document.getElementById(x);
+const API_URL="https://script.google.com/macros/s/AKfycbzLouCnIaQyA3dYbTDhGeuqJbTuqyxTTSL4dj287r4v9C7JRJO5HBoeq2Jz_b3NVciI/exec",MAX=5*1024*1024,$=x=>document.getElementById(x);
 function esc(x){return String(x??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;")}
 function img(id){return id?`https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w300`:""}
 async function api(a,b=null)
