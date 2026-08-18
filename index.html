@@ -1,15 +1,1 @@
-<!doctype html>
-<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Student CRUD V2</title><link rel="stylesheet" href="./styles.css"></head>
-<body><main class="container">
-<h1>ระบบข้อมูลเด็กปฐมวัย</h1><p>GitHub Pages + Apps Script + Google Sheets + Google Drive</p>
-<section class="card"><h2>เพิ่ม / แก้ไขข้อมูล</h2>
-<form id="studentForm"><input type="hidden" id="row"><input type="hidden" id="oldImageFileId">
-<label>ID <input id="id" required></label><label>ชื่อ <input id="name" required></label>
-<label>อายุ <input id="age" type="number" min="1" max="10" required></label>
-<label>รูปภาพ <input id="image" type="file" accept="image/*"></label><div id="preview"></div>
-<div class="actions"><button type="submit">บันทึก</button><button type="button" id="cancelBtn" class="secondary">ยกเลิก</button></div>
-</form></section>
-<section class="card"><div class="toolbar"><h2>ข้อมูล</h2><button id="reloadBtn">โหลดข้อมูล</button></div>
-<p id="status"></p><div class="table-wrap"><table><thead><tr><th>รูป</th><th>ID</th><th>ชื่อ</th><th>อายุ</th><th>จัดการ</th></tr></thead>
-<tbody id="tableBody"></tbody></table></div></section></main><script src="./app.js"></script></body></html>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CRUD V2.1</title><link rel="stylesheet" href="styles.css"></head><body><main><h1>ระบบข้อมูล</h1><form id="f"><input type="hidden" id="row"><input type="hidden" id="old"><label>ID <input id="id" required></label><label>ชื่อ <input id="name" required></label><label>อายุ <input id="age" type="number" min="0" max="120" required></label><label>รูป <input id="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif"></label><small>รูปไม่เกิน 5 MB</small><div id="preview"></div><button>บันทึก</button><button type="button" id="cancel">ยกเลิก</button></form><p id="status"></p><table><thead><tr><th>รูป</th><th>ID</th><th>ชื่อ</th><th>อายุ</th><th>จัดการ</th></tr></thead><tbody id="t"></tbody></table></main><script src="app.js"></script></body></html>
